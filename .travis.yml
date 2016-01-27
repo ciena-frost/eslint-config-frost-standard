@@ -3,6 +3,10 @@ sudo: false
 node_js:
   - '5.3'
 
+branches:
+  except:
+    - /^v[0-9\.]+/
+
 before_install:
   - npm install -g coveralls
 
