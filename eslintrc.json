@@ -1,0 +1,30 @@
+{
+  "extends": ["standard"],
+  "rules": {
+    "valid-jsdoc": [
+      2,
+      {
+        "prefer": {
+          "virtual": "abstract",
+          "extends": "augments",
+          "constructor": "class",
+          "const": "constant",
+          "defaultvalue": "default",
+          "desc": "description",
+          "host": "external",
+          "fileoverview": "file",
+          "overview": "file",
+          "emits": "fires",
+          "func": "function",
+          "method": "function",
+          "var": "member",
+          "arg": "param",
+          "argument": "param",
+          "return": "returns",
+          "exception": "throws"
+        },
+        "requireReturn": false
+      }
+    ]
+  }
+}
