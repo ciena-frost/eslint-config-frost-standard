@@ -1,7 +1,4 @@
-<h1>
-  eslint-config-frost-standard <br />
-  [![Travis][travis-img]][travis-url] [![Coveralls][coveralls-img]][coveralls-url] [![NPM][npm-img]][npm-url]
-</h1>
+# eslint-config-frost-standard <br /> [![Travis][travis-img]][travis-url] [![Coveralls][coveralls-img]][coveralls-url] [![NPM][npm-img]][npm-url]
 
 Standard ESLint rules for Frost projects (based on [`standard`](https://github.com/feross/standard)).
 
