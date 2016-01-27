@@ -15,9 +15,11 @@ addons:
       - ubuntu-toolchain-r-test
     packages:
       - g++-4.8
-
 env:
-  - CXX=g++-4.8
+  matrix:
+    - CXX=g++-4.8
+  global:
+    secure: rKofjfa4BJqo244CeT8lMrC7br9uL4L/c3gz4iFTh8ArKZ8lcF7Nv0RWiZrIFMs9muKF5zEW0hLdp+XYK4ajOmgqjlc7HeIqQDuDsDMB1w3tfTUBxdtgeK3aLlaKpzKvcxDiWtN2S6attXgEGZOTSwxLKTYCVVwbdbB1ZMSYeGKgxM2+QPxME2A7cl+Um76U03TBXeYzsrO0lLdN2JPrkVocL0MwOZj6e4SP88RkX2o5tgI3qkKj6qoeXvT7JqT1w42DMvXunCTvH0MeYkT2snVJ7K5XUedi3kTO5UIkH51R8Mlo4Y6rXi8R4vyG5zL26GVNF4igQr74pv0Skfghwe9Q2w+zzWadjYsvXZOhiU9OOhaS9qvK0djFYuAXNecBDEK1Q3L5N/C0fe60sxPz8OuQYs/koyNkbfWgwYrLK29pC0dA+lGV+fnBpx2txqM8V6HcGBVjm1Uhunkd6DKlFF7Zq5PgMrf0W4qBKFWo3xshkD6k+k6Gbi5WSEUCgxes+a9uKIBi62U4Dvz0uDUiwNIp9DEDL8nXsoU4Avi8f3JWvAdl2GpY06yQYtmFrHRPEMN0TAOaoFt/eT/D+pOyc/q0vfcMT92qAdCL5mL3aOy0x0QiHYcNO+iQjVcTIbNGbv0mHF/BDVZdNQLoz72Zg/ynHk0E2hqiGto7k54rJkE=
 
 before_deploy:
   - ./scripts/git-tag.sh
