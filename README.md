@@ -1,6 +1,8 @@
 # eslint-config-frost-standard <br /> [![Travis][ci-img]][ci-url] [![Coveralls][cov-img]][cov-url] [![NPM][npm-img]][npm-url]
 
 Standard ESLint rules for Frost projects (based on [`standard`](https://github.com/feross/standard)).
+It is our goal to not deviate from `standard` but rather augment it with some additional rules not currently covered
+by `standard`. For example, we currently add some rules w.r.t. JSDoc comments.
 
 [![js-standard-style](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
 
