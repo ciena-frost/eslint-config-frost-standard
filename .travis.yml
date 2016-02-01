@@ -1,38 +1,37 @@
 language: node_js
 sudo: false
 node_js:
-  - '5.3'
-
+- '5.3'
 branches:
   except:
-    - /^v[0-9\.]+/
-
+  - /^v[0-9\.]+/
 before_install:
-  - npm install -g coveralls
-
+- npm install -g coveralls pr-bumper
+- pr-bumper check
 after_success:
-  - cat coverage/lcov.info | coveralls
-
+- cat coverage/lcov.info | coveralls
 addons:
   apt:
     sources:
-      - ubuntu-toolchain-r-test
+    - ubuntu-toolchain-r-test
     packages:
-      - g++-4.8
+    - g++-4.8
 env:
   matrix:
-    - CXX=g++-4.8
+  - CXX=g++-4.8
   global:
-    secure: rKofjfa4BJqo244CeT8lMrC7br9uL4L/c3gz4iFTh8ArKZ8lcF7Nv0RWiZrIFMs9muKF5zEW0hLdp+XYK4ajOmgqjlc7HeIqQDuDsDMB1w3tfTUBxdtgeK3aLlaKpzKvcxDiWtN2S6attXgEGZOTSwxLKTYCVVwbdbB1ZMSYeGKgxM2+QPxME2A7cl+Um76U03TBXeYzsrO0lLdN2JPrkVocL0MwOZj6e4SP88RkX2o5tgI3qkKj6qoeXvT7JqT1w42DMvXunCTvH0MeYkT2snVJ7K5XUedi3kTO5UIkH51R8Mlo4Y6rXi8R4vyG5zL26GVNF4igQr74pv0Skfghwe9Q2w+zzWadjYsvXZOhiU9OOhaS9qvK0djFYuAXNecBDEK1Q3L5N/C0fe60sxPz8OuQYs/koyNkbfWgwYrLK29pC0dA+lGV+fnBpx2txqM8V6HcGBVjm1Uhunkd6DKlFF7Zq5PgMrf0W4qBKFWo3xshkD6k+k6Gbi5WSEUCgxes+a9uKIBi62U4Dvz0uDUiwNIp9DEDL8nXsoU4Avi8f3JWvAdl2GpY06yQYtmFrHRPEMN0TAOaoFt/eT/D+pOyc/q0vfcMT92qAdCL5mL3aOy0x0QiHYcNO+iQjVcTIbNGbv0mHF/BDVZdNQLoz72Zg/ynHk0E2hqiGto7k54rJkE=
-
+  - secure: msCqhrwEfqC5iJULE5FH6V8rXtNQXil3+NztD9tSwVfOc/CwlvY8JxRnpEPSPjxmeQ2eLSQ0RgGxVk/qCOX66fo8EN+/PsbaArV4ThFuNQcfEUuzh/iSriM/nBTqBAmb7eE/J38Jbg77clW0ojFW63PlgS4+HBZ/TZfSlFY5lLiV3+ogqO9OW6/QhNLZawD+GQhsVn0OC97CLJ30YIzYCOdVFYPlnDvVGIgvUfChytAx57su056gQLMr5A8iEomMLCkVzt1YA8v9eQHJVEMd5i30MidJkaXr/ldBF4Mm2llxDG5zkbVEx7RTFOR5pC5zQ5o0DdXpZhbPhVGfHh0sIPlAD9ao3c9s7v94FohSy0heUOzE3IcCeHDKZhjE3wK5GUAkLL+q+j34MlmUQumHobhb7lI09botKzKskKvC85Cq7U9R/51i11tZhKg33B6Lz9tqEfxJmFpgHHinuBNiDKlxN4Pu8y1JpZvhvrb4YiYVopgGZb9jGX67M3ptaJ72YZR3XR34UxH3CjpstxY3oIEF6AKjJokmt+iN5hDD/QlXu001g8QucI83VddKl8AwYuLUzLD2jIJE1vcSyu88vm899QVp1sXCHffwwEX6IjHtwCbEZ76aiF4PVzzd6hWpzw1tdWqSi1N1wL7RWukcbUIP2YnMI601D+2umLKOZfk=
 before_deploy:
-  - ./scripts/git-tag.sh
-
+- pr-bumper bump
 deploy:
   provider: npm
-  email: adam.meadows@gmail.com
+  email: npm.ciena@gmail.com
+  skip_cleanup: true
   api_key:
-    secure: aA/XIIWTozJ/gDHbvsJaHdDr2mH7Nc5dts5eD6sqX5LMyNgbeZpbF7tHmjHa/1SrifBzvuNWzMR1qZPlZjnW2J1Vys06FToQEiwUIHnWPJfy1emuQjpQL9JtTtYT4XP72+6sQDTA7EwkdQCjZSP6g5e9XfIBMae2BW2y2R83Cp7uY9+FZwlwvJ/cbbmXxetFMNPrI3DA3Pw9EeKNJ6edvBqvKBIwIdIdXF8bWZOzlM/lkzJ+mnLa9W3m7Qqp56Gps+MUswfYjUIRpZETH1O4f2n+RDePaswqYgHzEaPGkv/gUg6UtLT9WDIiW6yM/JMG0TgFgJ7c4eIT50fnGfw0YQUrlJ2nw07eT0s82Fh475dndsyp8GOmAgRSTZ3NBXYtrR3jEYwjgyTLJLXWT+6psvlpNWF4EGMs+//XgKCjw6vfBpr+h3yVoWoKbhKViqimw2XiagePHNfkoDAN2009ASyqflaaBkIllQaNFe96V2riGZg5aFCJLJpbipZTMULQ/cucm3wYn0ZrIHw7rK8K3/TohEtunic0bDkidZEJXm4CHnk9Vv6nVAP5IAgbHFTYzwe5Uua48thrwz+OQZ/EZcz+80DeppXP7oP794HnHwexFvFkL01mQcKl9SPPV0Y4u6VMxBZesyFXYCz/ENwJxjryQK4IKHTpP5mn2keA5E8=
+    secure: jg8z8fcRzgGyhTQbrO6v9Njy0/xkeEAMgNFpgMhJxUzIvtX/SYtOIyUmWC9zJkO3pEcNT3kmjvbb3lCfpb3iY3id8cu2T/LGczHJ6pVqcmLqDyfFvQkZX5UXRkjyPkWlpMsq8/XdFQ+/CCBpF97sBDpwtbOlJBGCxXopPZXC7ishU6RAcHLA4otp5T3UwHIlub66npKU7n8N9p+iTiKGrjuM/rfX/LORmkazRh1L7zPC/UYFq5YNwf2sH3i6bPdEc6q5Eq+xqaQ/vltJ5YQcJIyrTtCdA2fo5AlqofD6/KoaybVdH/U+cvAaZV4GParguk3S5mJtD5K9utywNMtMFBmjyZlmPLJe/hMi1JI51xwh70vhCOqLyQSa4/Ci8uEUIv1TFYHF2ILyW/SHbndCls5OuA+vo16NqQUnZLRPa+MTxyLK+K4niLmoBSKUTMAkj52UUHyoTSqTUDnvqU1vwsDVjsD2+Mmi6pit1giWHFR+WPYlZxVvl16FSf7Xz0ogkSVlpc49rLLZODi5LKio6pE8jLkKTum/j+0eYSKsveH6nDgv+EIjFakqTA1l5ur4lsnVYPZ6/fdxNIbK35g/ZyoSTWRdhKol0mtkCwRgTjq4wXG6eHsuqgraS64D8eQvEHQZ1ANG7kRlVWb0aKMHMpx48Jem7alyxjxi+zh6Bps=
   on:
     branch: master
     tags: false
+notifications:
+  slack:
+    secure: DRU6bwM7IvD0sVqqo57eF9ahRl/rMR9FTgB0dSEqJIuPdhEppgaB5eaSG/AvEH7+JvF/npjK9aNu/7nGZXX9wf31XxxswJpsV2lm5F5IO/TEvU/B6YxTz/2Z1NR32iCXs7UXPhlyWj116LwdL/8BAVO39zkUj1JWCk7Ajooigi5xR4urPyGTuSxHgPFj6MhTQTUHaG7ao+W8nUc5y8kn3ScFl+xkJTqkYRoQQ3C/0xURm75Zz5E9yDoowmYpk9SQ39rlYZq9y9+4kJ/Ii/wGCUJ47oskR9WQu9vUKKezD85BZawzmY8qXQitVaCtPd6thxjH30lDjJN2TLOwXTbHcFA9QFmCshDfgBSyPY+Tm7j0xgQLhCh8qJ/+ihz3/x37EOh/JFWsp1BJ0kepcocrjmFxpAJ2kTAkVbgc78NAZgFHg4hzDDbHogXHRfoDYvf3erF/G1OMDtN6LPPu0eYRh8rprUXAOMDgibLHD55Kq40/9q524XTrYD7mmWAlN07Q3zSzFnlcN5x3CK6rGfMa4DTyXUtYG2oLYAyX9Dw+DFm/anQwCtwnsuxnMWYUZLumtp2bahp8M4B1ymb4ZV8JsSvi5rC99F8CWg0vW4wd5PdlLe3bphuQTS9ukPFt6qlGj4EHk6rw2YDKwbGueyNf+FHb+krmw/7LzfNm+TFYnTQ=
