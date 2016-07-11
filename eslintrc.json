@@ -26,6 +26,11 @@
         },
         "requireReturn": false
       }
-    ]
+    ],
+    "camelcase": 2,
+    "max-len": [2, 120, 4, {
+      "ignoreComments": true,
+      "ignoreUrls": true
+    }]
   }
 }
