@@ -1,7 +1,18 @@
 {
   "extends": ["standard"],
   "parser": "babel-eslint",
+  "plugins": ["mocha"],
   "rules": {
+    "camelcase": 2,
+    "max-len": [2, 120, 4, {
+      "ignoreComments": true,
+      "ignoreUrls": true
+    }],
+    "mocha/handle-done-callback": 2,
+    "mocha/no-exclusive-tests": 2,
+    "mocha/no-global-tests": 2,
+    "mocha/no-pending-tests": 2,
+    "mocha/no-skipped-tests": 1,
     "valid-jsdoc": [
       2,
       {
@@ -26,11 +37,6 @@
         },
         "requireReturn": false
       }
-    ],
-    "camelcase": 2,
-    "max-len": [2, 120, 4, {
-      "ignoreComments": true,
-      "ignoreUrls": true
-    }]
+    ]
   }
 }
