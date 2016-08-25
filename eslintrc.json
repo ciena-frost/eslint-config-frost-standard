@@ -4,6 +4,7 @@
   "plugins": ["mocha"],
   "rules": {
     "camelcase": 2,
+    "complexity": [2, 5],
     "max-len": [2, 120, 4, {
       "ignoreComments": true,
       "ignoreUrls": true
