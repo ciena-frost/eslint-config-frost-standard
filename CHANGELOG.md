@@ -1,3 +1,6 @@
+# 4.0.0
+ * **New Rule** `complexity` to enforce a maximum cyclomatic complexity of 5 for all functions.
+
 # 3.0.0
 ## Breaking changes
  * **Switched** to `eslint@3.x`
