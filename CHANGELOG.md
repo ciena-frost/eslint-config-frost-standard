@@ -1,3 +1,8 @@
+# 4.0.1
+ * **Updated** `eslint-plugin-mocha` to allow us to stop using the fork from `job13er`
+
+
+
 # 4.0.0
  * **New Rule** `complexity` to enforce a maximum cyclomatic complexity of 5 for all functions.
 
