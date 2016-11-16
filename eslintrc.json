@@ -26,6 +26,7 @@
         "describeModule"
       ]
     }],
+    "no-unused-expressions": 2,
     "valid-jsdoc": [
       2,
       {
