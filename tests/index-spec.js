@@ -12,15 +12,31 @@ describe('config', () => {
     })
 
     const code = 'var foo = 1\nvar bar = function () {}\nbar(foo)\n'
-    expect(cli.executeOnText(code).errorCount).to.be.equal(0)
+    expect(cli.executeOnText(code).errorCount).to.equal(0)
   })
 
-  it('extends standard', () => {
-    expect(config.extends[0]).to.be.equal('standard')
+  it('should extend standard', () => {
+    expect(config.extends[0]).to.equal('standard')
   })
 
-  it('includes valid-jsdoc', () => {
-    expect(config.rules['valid-jsdoc']).not.to.be.null
+  it('should include camelcase', () => {
+    expect(config.rules.camelcase).not.to.equal(undefined)
+  })
+
+  it('should include complexity', () => {
+    expect(config.rules.complexity).not.to.equal(undefined)
+  })
+
+  it('should include max-len', () => {
+    expect(config.rules['max-len']).not.to.equal(undefined)
+  })
+
+  it('should include no-unused-expressions', () => {
+    expect(config.rules['no-unused-expressions']).not.to.equal(undefined)
+  })
+
+  it('should include valid-jsdoc', () => {
+    expect(config.rules['valid-jsdoc']).not.to.equal(undefined)
   })
 })
 
