@@ -1,3 +1,7 @@
+# 5.0.0
+* **Added** an additional rule: `no-unused-expressions` which will disallow `expect(foo).to.be.true` style assertions. See [this issue](https://github.com/chaijs/chai/issues/726) for more info. 
+
+
 # 4.0.1
  * **Updated** `eslint-plugin-mocha` to allow us to stop using the fork from `job13er`
 
