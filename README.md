@@ -48,3 +48,7 @@ Make sure you don't include empty `it()` calls. More details available [here](ht
 
 #### `mocha/no-skipped-tests`
 Emit a warning when you use `it.skip()` or `describe.skip()`. Sometimes it's necessary, but it's nice to easily see them all listed out in one place, and they should be temporary whenever they are checked in. More details available [here](https://github.com/lo1tuma/eslint-plugin-mocha/blob/master/docs/rules/no-skipped-tests.md).
+
+### `no-unused-expressions`
+Stop developers from using property assertions like `expect(foo).to.be.true`. Mainly because of [this issue](https://github.com/chaijs/chai/issues/726).
+More details available [here](http://eslint.org/docs/rules/no-unused-expressions).
