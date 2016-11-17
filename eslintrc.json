@@ -26,7 +26,9 @@
         "describeModule"
       ]
     }],
-    "no-unused-expressions": 2,
+    "no-unused-expressions": [2, {
+      "allowTernary": true
+    }],
     "valid-jsdoc": [
       2,
       {
