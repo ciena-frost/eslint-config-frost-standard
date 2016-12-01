@@ -1,10 +1,25 @@
 {
   "extends": ["standard"],
   "parser": "babel-eslint",
-  "plugins": ["mocha"],
+  "plugins": ["ember-cleanup", "mocha"],
   "rules": {
     "camelcase": 2,
     "complexity": [2, 5],
+    "ember-cleanup/cp-macro-alias": 2,
+    "ember-cleanup/destructuring": 2,
+    "ember-cleanup/no-console": 2,
+    "ember-cleanup/no-dup-keys": 2,
+    "ember-cleanup/no-expr-in-dep-keys": 2,
+    "ember-cleanup/no-is-array": 2,
+    "ember-cleanup/no-set-in-getter": 2,
+    "ember-cleanup/no-settimeout": 2,
+    "ember-cleanup/no-this-in-dep-keys": 2,
+    "ember-cleanup/no-throw": 2,
+    "ember-cleanup/no-typeof": 2,
+    "ember-cleanup/one-level-each": 2,
+    "ember-cleanup/route-model-return": 2,
+    "ember-cleanup/square-brackets": 2,
+    "ember-cleanup/super-args": 2,
     "max-len": [2, 120, 4, {
       "ignoreComments": true,
       "ignoreUrls": true
