@@ -29,7 +29,7 @@ Enforces a maximum cyclomatic complexity (of 5) for functions. More details avai
 Enforces a maximum line length of 120 characters. More details available [here](http://eslint.org/docs/rules/max-len)
 
 ### `valid-jsdoc`
-Make sure your `JSDoc` comment blocks are valid/consistent. More details availalbe [here](http://eslint.org/docs/rules/valid-jsdoc).
+Make sure your `JSDoc` comment blocks are valid/consistent. More details available [here](http://eslint.org/docs/rules/valid-jsdoc).
 
 ### `eslint-plugin-mocha`
 We use a number of rules from [`eslint-plugin-mocha`](https://github.com/lo1tuma/eslint-plugin-mocha) but we currently use [our own fork](https://github.com/job13er/eslint-plugin-mocha) of the project to provide support for `ember-cli-mocha`. We should be updating to the latest soon since our fork is no longer necessary and we can define this [in our rule config](https://github.com/lo1tuma/eslint-plugin-mocha/blob/master/docs/rules/no-exclusive-tests.md)
