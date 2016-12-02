@@ -1,3 +1,8 @@
+# 5.0.1
+ * **Fixed** a typo in `README.md` (thanks @juwara0 😄)
+
+
+
 # 5.0.0
 * **Added** an additional rule: `no-unused-expressions` which will disallow `expect(foo).to.be.true` style assertions. See [this issue](https://github.com/chaijs/chai/issues/726) for more info. 
 
