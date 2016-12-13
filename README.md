@@ -25,6 +25,54 @@ Enforces a `camelCase` variable naming convention. More details available [here]
 ### `complexity`
 Enforces a maximum cyclomatic complexity (of 5) for functions. More details available [here](http://eslint.org/docs/rules/complexity).
 
+### `eslint-plugin-ember-cleanup`
+We use a number of rules from [`eslint-plugin-ember-cleanup`](https://github.com/onechiporenko/eslint-plugin-ember-cleanup)
+
+#### `ember-cleanup/cp-macro-alias`
+Looks for Computed Properties that look like `computed.alias` but written as 'general' CP
+
+#### `ember-cleanup/destructuring`
+Looks for usage `Ember.*` many times and propose to replace it with `const {} = Ember`
+
+#### `ember-cleanup/no-console`
+Propose to use `Ember.Logger` instead of console
+
+#### `ember-cleanup/no-dup-keys`
+Checks for duplicated dependent keys for observers and computed properties.
+
+#### `ember-cleanup/no-expr-in-dep-keys`
+Checks for expressions in the dependent keys
+
+#### `ember-cleanup/no-is-array`
+Checks for array detection and propose to use `Ember.isArray`
+
+#### `ember-cleanup/no-set-in-getter`
+Disallow `Ember.set`, `this.set` inside computed properties getters
+
+#### `ember-cleanup/no-settimeout`
+Propose to use `Ember.run.later` instead of `setTimeout`
+
+#### `ember-cleanup/no-this-in-dep-keys`
+Check for dependent keys that starts with `this.`
+
+#### `ember-cleanup/no-throw`
+Propose to use `Ember.assert` instead of throwing errors
+
+#### `ember-cleanup/no-typeof`
+Propose to use `Ember.typeOf` instead of built-in `typeof` for some types check
+
+#### `ember-cleanup/one-level-each`
+Checks for dependent keys with invalid `@each` usage
+
+#### `ember-cleanup/route-model-return`
+Check that route's `model` return value
+
+#### `ember-cleanup/square-brackets`
+Checks for dependent keys with invalid `[]` usage
+
+#### `ember-cleanup/super-args`
+Check potential invalid calls `_super` without `...`
+
 ### `max-len`
 Enforces a maximum line length of 120 characters. More details available [here](http://eslint.org/docs/rules/max-len)
 
@@ -32,7 +80,7 @@ Enforces a maximum line length of 120 characters. More details available [here](
 Make sure your `JSDoc` comment blocks are valid/consistent. More details available [here](http://eslint.org/docs/rules/valid-jsdoc).
 
 ### `eslint-plugin-mocha`
-We use a number of rules from [`eslint-plugin-mocha`](https://github.com/lo1tuma/eslint-plugin-mocha) but we currently use [our own fork](https://github.com/job13er/eslint-plugin-mocha) of the project to provide support for `ember-cli-mocha`. We should be updating to the latest soon since our fork is no longer necessary and we can define this [in our rule config](https://github.com/lo1tuma/eslint-plugin-mocha/blob/master/docs/rules/no-exclusive-tests.md)
+We use a number of rules from [`eslint-plugin-mocha`](https://github.com/lo1tuma/eslint-plugin-mocha)
 
 #### `mocha/handle-done-callback`
 Make sure that when you define the `done` callback, you actually call it somewhere. More details available [here](https://github.com/lo1tuma/eslint-plugin-mocha/blob/master/docs/rules/handle-done-callback.md).
