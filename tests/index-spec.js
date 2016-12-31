@@ -88,6 +88,10 @@ describe('config', () => {
       expect(config.plugins).to.include('ocd')
     })
 
+    it('includes sort-import-declaration-specifiers rule', function () {
+      expect(config.rules['ocd/sort-import-declaration-specifiers']).not.to.equal(undefined)
+    })
+
     it('includes sort-import-declarations rule', function () {
       expect(config.rules['ocd/sort-import-declarations']).not.to.equal(undefined)
     })
