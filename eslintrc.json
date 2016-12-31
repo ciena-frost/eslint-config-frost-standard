@@ -41,7 +41,8 @@
     "no-unused-expressions": [2, {
       "allowTernary": true
     }],
-    "ocd/sort-imports": 1,
+    "ocd/sort-import-declarations": 1,
+    "ocd/sort-variable-declarator-properties": 1,
     "valid-jsdoc": [
       2,
       {
