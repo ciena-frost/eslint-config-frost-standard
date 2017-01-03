@@ -1,3 +1,8 @@
+# 5.1.0
+
+* **Added** plugins [ember-standard](https://github.com/ciena-blueplanet/eslint-plugin-ember-standard) and [ocd](https://github.com/ciena-blueplanet/eslint-plugin-ocd) and configured their rules as warnings (will switch to errors in the next major release).
+
+
 # 5.0.1
  * **Fixed** a typo in `README.md` (thanks @juwara0 😄)
 
