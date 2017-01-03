@@ -117,6 +117,10 @@ describe('config', () => {
     expect(config.rules['no-unused-expressions']).not.to.equal(undefined)
   })
 
+  it('should include object-curly-spacing', () => {
+    expect(config.rules['object-curly-spacing']).not.to.equal(undefined)
+  })
+
   it('should include valid-jsdoc', () => {
     expect(config.rules['valid-jsdoc']).not.to.equal(undefined)
   })
