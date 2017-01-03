@@ -1,3 +1,8 @@
+# 5.3.0
+
+* **Added** warning to when using [object curly spacing](http://eslint.org/docs/rules/object-curly-spacing).
+
+
 # 5.2.0
 
 * **Fixed** `ocd/sort-imports` rule to separate internal and external modules.

@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-frost-standard",
-  "version": "5.2.0",
+  "version": "5.3.0",
   "dependencies": {
     "abbrev": {
       "version": "1.0.9",
@@ -341,9 +341,9 @@
       "resolved": "https://registry.npmjs.org/eslint-plugin-mocha/-/eslint-plugin-mocha-4.8.0.tgz"
     },
     "eslint-plugin-ocd": {
-      "version": "0.0.5",
-      "from": "eslint-plugin-ocd@0.0.5",
-      "resolved": "https://registry.npmjs.org/eslint-plugin-ocd/-/eslint-plugin-ocd-0.0.5.tgz"
+      "version": "0.0.6",
+      "from": "eslint-plugin-ocd@0.0.6",
+      "resolved": "https://registry.npmjs.org/eslint-plugin-ocd/-/eslint-plugin-ocd-0.0.6.tgz"
     },
     "eslint-plugin-promise": {
       "version": "2.0.1",
