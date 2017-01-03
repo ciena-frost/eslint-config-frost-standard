@@ -42,7 +42,16 @@
       "allowTernary": true
     }],
     "ocd/sort-import-declaration-specifiers": 1,
-    "ocd/sort-import-declarations": 1,
+    "ocd/sort-import-declarations": [
+      1,
+      {
+        "localPrefixes": [
+          "../",
+          "./",
+          "dummy/"
+        ]
+      }
+    ],
     "ocd/sort-variable-declarator-properties": 1,
     "valid-jsdoc": [
       2,
