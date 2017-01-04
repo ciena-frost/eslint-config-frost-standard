@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-frost-standard",
-  "version": "5.3.1",
+  "version": "5.3.2",
   "dependencies": {
     "abbrev": {
       "version": "1.0.9",
@@ -331,9 +331,9 @@
       "resolved": "https://registry.npmjs.org/eslint-config-standard/-/eslint-config-standard-5.3.5.tgz"
     },
     "eslint-plugin-ember-standard": {
-      "version": "0.0.19",
-      "from": "eslint-plugin-ember-standard@0.0.19",
-      "resolved": "https://registry.npmjs.org/eslint-plugin-ember-standard/-/eslint-plugin-ember-standard-0.0.19.tgz"
+      "version": "0.0.20",
+      "from": "eslint-plugin-ember-standard@0.0.20",
+      "resolved": "https://registry.npmjs.org/eslint-plugin-ember-standard/-/eslint-plugin-ember-standard-0.0.20.tgz"
     },
     "eslint-plugin-mocha": {
       "version": "4.8.0",

@@ -1,3 +1,8 @@
+# 5.3.2
+
+* **Fixed** bug with fix functionality of `ember-standard/destructure` rule where a property could end up in the variable declarator twice.
+
+
 # 5.3.1
 
 * **Fixed** bug where `Ember.String` and `Ember.Object` were being destructured when they shouldn't be.
