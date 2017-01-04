@@ -1,3 +1,8 @@
+# 5.3.1
+
+* **Fixed** bug where `Ember.String` and `Ember.Object` were being destructured when they shouldn't be.
+
+
 # 5.3.0
 
 * **Added** warning to when using [object curly spacing](http://eslint.org/docs/rules/object-curly-spacing).
