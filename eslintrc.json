@@ -9,42 +9,30 @@
   "rules": {
     "camelcase": 2,
     "complexity": [2, 5],
-    "ember-standard/computed-property-readonly": [1, "always"],
-    "ember-standard/destructure": [1, "always"],
-    "ember-standard/import": [1, "always"],
-    "ember-standard/logger": [1, "always"],
-    "ember-standard/no-set-in-computed-property": 1,
-    "ember-standard/no-settimeout": 1,
-    "ember-standard/prop-types": 1,
-    "ember-standard/single-destructure": 1,
+    "ember-standard/computed-property-readonly": [2, "always"],
+    "ember-standard/destructure": [2, "always"],
+    "ember-standard/import": [2, "always"],
+    "ember-standard/logger": [2, "always"],
+    "ember-standard/no-set-in-computed-property": 2,
+    "ember-standard/no-settimeout": 2,
+    "ember-standard/prop-types": 2,
+    "ember-standard/single-destructure": 2,
     "max-len": [2, 120, 4, {
       "ignoreComments": true,
       "ignoreUrls": true
     }],
     "mocha/handle-done-callback": 2,
-    "mocha/no-exclusive-tests": [2, {
-      "additionalTestFunctions": [
-        "describeComponent",
-        "describeModel",
-        "describeModule"
-      ]
-    }],
+    "mocha/no-exclusive-tests": 2,
     "mocha/no-global-tests": 2,
     "mocha/no-pending-tests": 2,
-    "mocha/no-skipped-tests": [1, {
-      "additionalTestFunctions": [
-        "describeComponent",
-        "describeModel",
-        "describeModule"
-      ]
-    }],
+    "mocha/no-skipped-tests": 1,
     "no-unused-expressions": [2, {
       "allowTernary": true
     }],
-    "object-curly-spacing": [1, "never"],
-    "ocd/sort-import-declaration-specifiers": 1,
+    "object-curly-spacing": [2, "never"],
+    "ocd/sort-import-declaration-specifiers": 2,
     "ocd/sort-import-declarations": [
-      1,
+      2,
       {
         "localPrefixes": [
           "../",
@@ -53,7 +41,7 @@
         ]
       }
     ],
-    "ocd/sort-variable-declarator-properties": 1,
+    "ocd/sort-variable-declarator-properties": 2,
     "valid-jsdoc": [
       2,
       {
