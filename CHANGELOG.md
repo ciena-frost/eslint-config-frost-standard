@@ -1,3 +1,9 @@
+# 6.0.0
+## Breaking Changes
+* **Converted** some warning rules to error rules (the `ember` and `ocd` ones that were recently introduced)
+## Non-breaking Changes
+* **Updated** `pr-bumper` and `travis` settings
+
 # 5.3.2
 
 * **Fixed** bug with fix functionality of `ember-standard/destructure` rule where a property could end up in the variable declarator twice.
