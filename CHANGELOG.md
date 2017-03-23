@@ -1,3 +1,8 @@
+# 6.0.1 (2017-03-23)
+
+* **Upgraded** to eslint-plugin-ember-standard 0.0.22
+
+
 # 6.0.0
 ## Breaking Changes
 * **Converted** some warning rules to error rules (the `ember` and `ocd` ones that were recently introduced)
