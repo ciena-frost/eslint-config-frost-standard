@@ -1,3 +1,6 @@
+# 6.0.2 (2017-06-24)
+* **Upgraded** to `eslint-plugin-ember-standard@0.0.22`
+
 # 6.0.1 (2017-03-23)
 
 * **Upgraded** to eslint-plugin-ember-standard 0.0.22
