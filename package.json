@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "lint": "eslint .",
-    "test": "yarn run lint && yarn run utest",
+    "test": "npm run lint && npm run utest",
     "utest": "istanbul cover _mocha tests"
   },
   "repository": {
