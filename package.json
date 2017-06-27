@@ -4,9 +4,9 @@
   "description": "Standard ESLint rules for Frost projects",
   "main": "index.js",
   "scripts": {
-    "lint": "./node_modules/.bin/eslint .",
+    "lint": "eslint .",
     "test": "yarn run lint && yarn run utest",
-    "utest": "./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha tests"
+    "utest": "istanbul cover _mocha tests"
   },
   "repository": {
     "type": "git",
