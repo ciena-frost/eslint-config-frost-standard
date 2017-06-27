@@ -1,3 +1,15 @@
+# 7.0.0 (2017-06-27)
+* **Upgraded** `eslint-config-standard` from `5.x` to `10.x`
+* **Added** explicit disabling of `import/first` rule to allow us to destructure `Ember` directly below import
+* **Added** `mocha/valid-test-descriptions` (Resolves [#38](https://github.com/ciena-frost/eslint-config-frost-standard/issues/38))
+* **Added** `mocha/no-mocha-arrows` (Resolves [#37](https://github.com/ciena-frost/eslint-config-frost-standard/issues/37))
+* **Added** `no-var` rule to enforce using `let` or `const` instead of `var`, b/c who the heck wants to use `var` anyway ;)
+* **Updated** documentation in `README.md` for additional rules we've added.
+* **Upgraded** `pr-bumper` to `3.x`
+* **Switched** from `npm` to `yarn` for installing dependencies.
+* **Added** `node@8` to build matrix.
+* **Added** the ability to detect consuming project name and add it to `localPrefixes` automatically, and tested it by locally installing in an app.
+
 # 6.0.2 (2017-06-24)
 * **Upgraded** to `eslint-plugin-ember-standard@0.0.23`
 
@@ -43,7 +55,7 @@
 
 
 # 5.0.0
-* **Added** an additional rule: `no-unused-expressions` which will disallow `expect(foo).to.be.true` style assertions. See [this issue](https://github.com/chaijs/chai/issues/726) for more info. 
+* **Added** an additional rule: `no-unused-expressions` which will disallow `expect(foo).to.be.true` style assertions. See [this issue](https://github.com/chaijs/chai/issues/726) for more info.
 
 
 # 4.0.1
@@ -69,4 +81,3 @@
 # 2.1.0
 * Added camelcase property for variables
 * Added max-len property of 120 chars per line
-
