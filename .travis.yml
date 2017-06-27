@@ -1,7 +1,8 @@
 language: node_js
 sudo: false
 node_js:
-- '6.9.1'
+- '6.0.0'
+- '8.1.2'
 addons:
   apt:
     sources:
@@ -17,8 +18,7 @@ env:
   global:
     secure: QX2s/9GLs8tKPZX6FDCsRhqP1F/5CSiqNpxthH8tEWScC4/yayzkRAFe8/Evl4YRyx9RTeJxKvLtiJJu6s+RS2zp9nmVRdAmEl1SK5PLGSevLPcYaNCJEs9tXTXpIuVFawUvhajyWySRmkX4n+I9bbMM/IcvYY6BNUdpaWe7vL5ZAv3oRyV7hTbnyw5zHC36gBXKeUNpTLKqClecq2KT/pC5QYNJpurNDQgDNCvaxLpgIoiE5zxuJR/4mQuS6FlfkeC3gpiOfvIOnhAtoBBTN1LtSZ+NU0rjsvk2yPyfPYwocSzKEuWOsC/nmIq0ADHo5MqVB+cLErjKqqwh71ir0kny7n1GuTgBmpakVoWIzFa38regzYbJvtkshENc30UCgsZJ2W4Iab5PO9gi9CjR9mXYAtwq1UkC29Efy0nwAdbd0OQtkvc0kk43JAPIYUh9mrGXie7IL2qkmF8PeqIOSv7JhcPdILY/MGadsW4jK32nVwp6Ms8/884FEuWAl1EU7KhC98c4SVeEfZsLMumE8zV031tkrNy9UeBcpI0JFRPKOJlGW1ctOScObEIoE7QagpwXs4QcW8bV7juw8/i5mHWx6xJ/3ZhH8wtEjbz2Ebky7Oy7RLdwy870Idm7aBRKV+JiY5ioy7cY4ur9zG3T36ab/LZ78cXPfvYCHl8DooA=
 before_install:
-- npm config set spin false
-- npm install -g coveralls pr-bumper@^1.0.0
+- npm install -g coveralls pr-bumper@^3.1.0
 - $(npm root -g)/pr-bumper/.travis/maybe-check-scope.sh
 install:
 - $(npm root -g)/pr-bumper/.travis/maybe-install.sh
@@ -35,7 +35,7 @@ deploy:
     secure: AJfgeGD/VTsPWxWUtdwB2LbtumXwAm9AbvC4upClQHvSIT/+jru980ih5WID2Ryn8PMlSQWWrtJpJADXc5T2S/MCC5r5BqO0X5W9yjusAKrm2AsNGNu9PYqaGmgzNe62ApeUn1ZzvyC6AzBEr0H7eTM+pWeRHOeR1IT/vJ2dnhbFfqLVeKroWfid9reO9eAcPFqvj5feBZhtUqMXoYmjTIzb9dp+Y3kDSRtcAquxzTFXJxiOagj259MQv7+B75ZiILgJ+jKLclOJFjQJg/3QACrUYZjs0i1FTmKy4NRBykRLojw/B5TMwX9tEBhzshNLa0BSpdiMQU9FsoOBB3vbvtJ5yDGoRohYJHne97kGYjNyAu9fmlPkTR5vTBvSHKcmNQKQaImxLYAPPg9cEWnL4CGUEbIOWvXXZYVWXTWG5GxIbDQiCERds0zbSyVQUwXgJTR9QIa56sjAE6JzFKZKsvr7e9XTzEanSA/7OHl3YDxMiJTo3u0Fa0Xk8zli2e5SGSYqf1Kbkk8O5yZOg+DocFyDWPMVlhf6kdKEHv0tomcnlsYzMIAcfqEPjJZOKmnH86G3YdJ0tO/1lH1W0Q38DxWcGEUtOKbG1/KzmTy9Zd3l4gRIzTHwVCVVZTukBnQVpjzu/Sq0ydLjrh7cZggnAGyA53rI0306JJpxK68gLTg=
   on:
     all_branches: true
-    node: '6.9.1'
+    node: '8.1.2'
     tags: true
 notifications:
   slack:
