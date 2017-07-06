@@ -1,3 +1,7 @@
+# 7.1.0 (2017-07-06)
+* **Fixed** dependencies to use versions that have appropriate `peerDependencies` settings to work with `eslint@4`. 
+
+
 # 7.0.0 (2017-06-27)
 * **Upgraded** `eslint-config-standard` from `5.x` to `10.x`
 * **Added** explicit disabling of `import/first` rule to allow us to destructure `Ember` directly below import
