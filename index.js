@@ -53,6 +53,7 @@ module.exports = {
     'mocha/no-pending-tests': 'error',
     'mocha/no-skipped-tests': 'warn',
     'mocha/valid-test-description': 'error',
+    'no-template-curly-in-string': 'off',
     'no-unused-expressions': ['error', {
       allowTernary: true
     }],
