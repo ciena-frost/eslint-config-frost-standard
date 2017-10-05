@@ -1,3 +1,6 @@
+# 7.1.1 (2017-10-05)
+* **Updated** eslint-plugin-ember-standard to new version which add support for `ember-decorators` to the `computed-readonly` rule
+
 # 7.1.0 (2017-07-06)
 * **Fixed** dependencies to use versions that have appropriate `peerDependencies` settings to work with `eslint@4`. 
 
