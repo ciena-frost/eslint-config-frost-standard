@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "lint": "eslint .",
-    "test": "yarn run lint && yarn run utest",
+    "test": "npm run lint && npm run utest",
     "utest": "istanbul cover _mocha tests"
   },
   "repository": {
@@ -36,14 +36,14 @@
     "mocha": "^3.4.2"
   },
   "dependencies": {
-    "babel-eslint": "^7.2.3",
+    "babel-eslint": "^8.0.2",
     "eslint-config-standard": "10.2.1",
-    "eslint-plugin-ember-standard": "0.1.0",
-    "eslint-plugin-import": "2.6.0",
+    "eslint-plugin-ember-standard": "1.0.1",
+    "eslint-plugin-import": "2.8.0",
     "eslint-plugin-mocha": "4.11.0",
-    "eslint-plugin-node": "4.2.2",
-    "eslint-plugin-ocd": "0.0.6",
-    "eslint-plugin-promise": "3.5.0",
+    "eslint-plugin-node": "5.2.1",
+    "eslint-plugin-ocd": "1.0.2",
+    "eslint-plugin-promise": "3.6.0",
     "eslint-plugin-standard": "3.0.1"
   }
 }
