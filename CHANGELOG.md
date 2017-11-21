@@ -1,3 +1,11 @@
+# 8.0.0 (2017-11-21)
+* **Updated** to version 8 of `babel-eslint`
+* **Updated** to version 1.0.1 of `eslint-plugin-ember-standard`
+* **Updated** to version 2.8.0 of `eslint-plugin-import`
+* **Updated** to version 5.2.1 of `eslint-plugin-node` dependency
+* **Updated** to version 1.0.2 of `eslint-plugin-ocd`
+* **Updated** to version 3.6.0 of `eslint-plugin-promise`
+
 # 7.1.1 (2017-10-05)
 * **Updated** eslint-plugin-ember-standard to new version which add support for `ember-decorators` to the `computed-readonly` rule
 
