@@ -32,17 +32,17 @@
   "devDependencies": {
     "chai": "^4.0.0",
     "eslint": "^4.1.0",
-    "istanbul": "^0.4.2",
+    "istanbul": "^0.4.5",
     "mocha": "^3.4.2"
   },
   "dependencies": {
-    "babel-eslint": "^8.0.2",
+    "babel-eslint": "^8.0.3",
     "eslint-config-standard": "10.2.1",
-    "eslint-plugin-ember-standard": "1.0.1",
+    "eslint-plugin-ember-standard": "1.0.2",
     "eslint-plugin-import": "2.8.0",
     "eslint-plugin-mocha": "4.11.0",
     "eslint-plugin-node": "5.2.1",
-    "eslint-plugin-ocd": "1.0.2",
+    "eslint-plugin-ocd": "1.0.3",
     "eslint-plugin-promise": "3.6.0",
     "eslint-plugin-standard": "3.0.1"
   }
