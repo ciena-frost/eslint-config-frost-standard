@@ -1,3 +1,9 @@
+# 9.0.0 (2017-12-18)
+* **Updated** babel-eslint to ^8.0.3
+* **Updated** istanbul to ^0.4.5
+* **Upgraded** and pinned eslint-plugin-ember-standard to latest version
+* **Upgraded** and pinned eslint-plugin-ocd to latest version
+
 # 8.0.0 (2017-11-21)
 * **Updated** to version 8 of `babel-eslint`
 * **Updated** to version 1.0.1 of `eslint-plugin-ember-standard`
