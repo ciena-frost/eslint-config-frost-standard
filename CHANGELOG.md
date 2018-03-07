@@ -1,3 +1,10 @@
+# 9.0.1 (2018-03-07)
+* **Updated** pull request template
+* **Added** issue template
+* **Updated** `eslint-plugin-ember-standard` to `1.0.3`
+* **Updated** `eslint-plugin-ocd` to `1.0.6`
+* **Updated** `package-lock.json` file
+
 # 9.0.0 (2017-12-18)
 * **Updated** babel-eslint to ^8.0.3
 * **Updated** istanbul to ^0.4.5
