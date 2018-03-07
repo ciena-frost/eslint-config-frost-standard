@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:ciena-frost/frost-standard.git"
+    "url": "https://github.com/ciena-frost/eslint-config-frost-standard.git"
   },
   "engines": {
     "node": ">= 6.9.1"
@@ -26,9 +26,9 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ciena-frost/frost-standard/issues"
+    "url": "https://github.com/ciena-frost/eslint-config-frost-standard/issues"
   },
-  "homepage": "https://github.com/ciena-frost/frost-standard#readme",
+  "homepage": "https://github.com/ciena-frost/eslint-config-frost-standard#readme",
   "devDependencies": {
     "chai": "^4.0.0",
     "eslint": "^4.1.0",
@@ -38,11 +38,11 @@
   "dependencies": {
     "babel-eslint": "^8.0.3",
     "eslint-config-standard": "10.2.1",
-    "eslint-plugin-ember-standard": "1.0.2",
+    "eslint-plugin-ember-standard": "1.0.3",
     "eslint-plugin-import": "2.8.0",
     "eslint-plugin-mocha": "4.11.0",
     "eslint-plugin-node": "5.2.1",
-    "eslint-plugin-ocd": "1.0.3",
+    "eslint-plugin-ocd": "1.0.6",
     "eslint-plugin-promise": "3.6.0",
     "eslint-plugin-standard": "3.0.1"
   }
