@@ -1,3 +1,7 @@
+# 9.0.2 (2018-03-28)
+* **Updated** engines.node version to `>= 6.0.0` in `package.json`
+
+
 # 9.0.1 (2018-03-07)
 * **Updated** pull request template
 * **Added** issue template
