@@ -1,7 +1,7 @@
 language: node_js
 sudo: false
 node_js:
-- $PUBLISH_NODE_VERSION
+- '8.6.0'
 
 addons:
   apt:
@@ -37,7 +37,7 @@ deploy:
     secure: kIxWulkMS36EV3G9e10Zp0Xex97UBELEmiStlQAbJgNXLHewLwWQwA4AOf8G3uTByvci6TxtYovbp6gAe1N1IEeHKB85WIiGW+cCe/Zc6u4601j1BbDEVSd9OqAxXKU+rvPhmwdfDweQs36WzVICd+oi+vcMSVdiVYAAeNTx0r714BqT4GR0DBeDW0pBwnB4qDm1DRNVaLwcvThCJ65iO481wYge9T83XC7uoPoxfBSMtbdFi4aK6FU/h4p7RxFQ1Pl9/4EM3xBMPUqySLf+LWvayUe41QxMYL5UZLom6ojm2anAlJNBiFggcd1yWjUEN13oVcBqPilRRxxKBSJh5rI5fRJub1IIYMM1SMzutbZFVrmhVki4jdkQ01zZuPY4GeMB2pJUEqjaXqwDgkryoSoM+6oBKun2nPaQtSPHt7wjMy8Bakj9a5rmkSmijvNFFuRDkTkpWA0Dubol+zMp7CkN4maNKMS8o9m1d+DYOh/cVHLWeUzd5DM5we9mK3Aerl53KsvXQf2ca6tn7jEblWrjde2ITIec07fxmn43LO6WObcVdUXp9bFDPvoqAWmFnHqrr2kmj6ewRdzIRBIsszmvjdjD6YvtqIdxEozTekWQGIIziOx5j0ln4+TN1TyT3Z2hHKz7/pv+AeKh3m2wjhzoXsHBVmk3qqn69AcKQVY=
   on:
     all_branches: true
-    node: $PUBLISH_NODE_VERSION
+    node: '8.6.0'
     tags: true
 notifications:
   slack:
