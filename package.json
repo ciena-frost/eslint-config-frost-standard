@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-frost-standard",
-  "version": "9.0.2",
+  "version": "10.0.0",
   "description": "Standard ESLint rules for Frost projects",
   "main": "index.js",
   "scripts": {
