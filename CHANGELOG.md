@@ -1,3 +1,8 @@
+# 10.0.1 (2018-09-25)
+
+* Update travis api key
+
+
 # 10.0.0 (2018-09-25)
 
 * Update eslint-plugin-ember-standard for Ember 3.0
