@@ -1,3 +1,8 @@
+# 10.0.0 (2018-09-25)
+
+* Update eslint-plugin-ember-standard for Ember 3.0
+
+
 # 9.0.2 (2018-03-28)
 * **Updated** engines.node version to `>= 6.0.0` in `package.json`
 
